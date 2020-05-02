@@ -1,0 +1,707 @@
+/********** Responsive **********/
+
+@media screen and (min-width:1000px) {
+    /** Outline **/
+    #headerMenu{
+        display: none;
+    }
+
+    #menuWrapper{
+        display: none;
+    }
+
+    body {
+        font-family: "Montserrat";
+        width: 100%;
+        background-color: #f3f6f9;
+        height: auto;
+        margin: auto;
+        overflow: auto;
+    }
+
+    /** top **/
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    div#topArea {
+        width: 100%;
+        background-color: #f3f6f9;
+        position: fixed;     
+        height: 200px;
+        overflow: hidden;   
+        transition: 0.5s;
+    }
+
+    img#logo {
+        width: 240px;
+        height: 24px;
+        padding-left: 120px;
+        vertical-align: middle;
+        position: relative;
+    }
+
+    /** navigation **/
+    a#logoLink {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    div#navbar {
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        transform: translateY(-50%);
+        right:0;
+    }
+
+    nav ul {
+        padding-right: 120px;
+        padding-left: 0;
+        float: right;
+        margin: 0;
+    }
+
+    nav ul li {
+        padding-left: 40px;
+        display: inline;
+        font: 11pt "Montserrat";
+        text-decoration: none;
+        text-align: center;
+    }
+
+    a.navStyle {
+        text-decoration: none;
+        list-style: none;
+        color: #999c9f;
+        font-weight: 500;
+    }
+
+    nav ul li a:hover {
+        color: #61d3f4;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    nav ul li a:visited {
+        color: #61d3f4;
+        font-weight: bold;
+    }
+
+    /** copy **/
+    div.topCopy {
+        width: 1000px;
+        padding-top: 210px;
+        text-align: center;
+        position: relative;
+        margin: auto;
+    }
+
+    div.topCopy h3 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 40px;
+        color: #35383b;
+    }
+
+    div.topCopy p {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 100px;
+        text-align: center;
+        font-size: 11pt;
+        letter-spacing: 0;
+        line-height: 30px;
+        color: #676a6d;
+    }
+
+    /** Body container **/
+    div.bodyContainer {
+        width: 1000px;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    div.contentsContainer {
+        background-color: #f3f6f9;
+        width: 1020px;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    /** Thumbnail **/
+    div.thumbnail {
+        width: 320px;
+        height: 320px;
+        margin: 0;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        float: left;
+        position: relative;
+    }
+
+    img {
+        width: 320px;
+        height: 320px;
+        min-width: 200px;
+    }
+
+    div.padding {
+        padding-bottom: 150px;
+    }
+
+    /** Footer **/
+    div.footer {
+        background: #f3f6f9;
+        border-top: #d5d8db solid 1px;
+        width: 100%;
+        min-width: 0;
+        bottom: 0;
+        margin: 0;
+        float: right;
+        text-align: center;
+        position: relative;
+    }
+
+    p.footerCopy {
+        font: 11pt "Montserrat";
+        color: #a3a6a9;
+        padding: 50px;
+    }
+/*
+    div.link {
+        width: 100%;
+        font: 11pt "Montserrat";
+        color: #a3a6a9;
+        padding-bottom: 40px;
+        margin: 0;
+    }
+*/
+    a.gitlink {
+        text-decoration: none;
+    }
+
+    img.git {
+        width: 10px;
+        height: 20px;
+        min-width: 20px;
+        opacity: .5;
+        vertical-align: middle;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 414px) {
+    /** top **/
+    header {
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: auto;
+        position: relative;
+    }
+
+    div#topArea {
+        width: 414px;
+        line-height: 80px;
+        background-color: white;
+        position: relative;
+        /*border-bottom: #d5d8db solid 1px;*/ 
+    }
+
+    img#logo {
+        width: 176px;
+        height: 20px;
+        vertical-align: middle;
+        position: relative;
+        /*min-width: 0;*/
+    }
+
+    #menuWrapper {
+        overflow: auto;
+    }
+
+    /** Body container **/
+    body {
+        font-family: "Nunito";
+        width: 100%;
+        height: auto;
+        margin: 0;
+        overflow: auto;
+    }
+
+   div.container {
+        background-color: white;
+        padding-top: 20px;
+        width: 414px;
+        height: auto;
+        margin: 20px;
+        overflow: hidden;
+        padding-bottom: 60px;
+    }
+
+    /** navigation **/
+    div#navbar {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #navbar {
+        transition: height 0.5s;
+        height: 0px;
+    }
+
+    #navbar.active {
+        position: relative;
+        height: 224px;
+        
+    }
+    #logoLink{
+        position: absolute;
+        top: 0;
+        transform: translateX(50%);
+        right: 50%;
+    }
+    ul#nav{
+        padding: 0;
+    }
+    ul#nav li {
+        position: relative;
+        display: block;
+        line-height: 40px;
+        border-bottom: 1px solid #d5d8db;
+        padding: 4px;
+        text-align: center;
+        width: 100%;
+    }
+   
+    a#headerMenu {
+        position: relative;
+        float: right;
+        padding-right: 10px
+    }
+
+    a.navStyle {
+        text-decoration: none;
+        list-style: none;
+        color: #7b7e81;
+    }
+   
+    /** Title **/
+    div.element1 {
+        width: 414px;
+        padding-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p.categoryTitle {
+        font-size: 20pt;
+        font-style: italic;
+        margin-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px; 
+    }
+    hr.categoryLine { 
+        display: block;
+        margin-top: 0;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-style: inset;
+        border-width: .5px;
+        border-color: #e9ecef
+    }
+    
+    /** Thumbnail **/
+    div.thumbnail {
+        width: 176px;
+        height: 400px;
+        margin-right: 20px;
+        float: left;
+        position: relative;
+    }
+
+    div.thumb {
+        width: 100%;
+    }
+
+    .thumbGrid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: white;
+        padding: 40px;
+    }
+
+    img {
+        width: 176px;
+        height: 200px;
+        }
+
+    /** Product Title **/
+    div.productName {
+        width: 176px;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+
+    span.pdt {
+        height: auto;
+    }
+
+    p.productTitle {
+        font-family: "Nunito";
+        color: #212224;
+        font-size: 12pt;
+        font-weight: bold;
+        text-align: center;
+        margin: 0px;
+    }
+
+    a.titleStyle {
+        text-decoration: none;
+        list-style: none;
+        color: 
+    }
+
+    p.price {
+        color: #676a6d;
+        text-align: center;
+        word-spacing: -4px;
+        margin: 0px;
+    }
+
+    span.dollarSign {
+        font-family: "Nunito";
+        font-size: 11px;
+        position: relative;
+        top: -.4em;
+    }
+
+    span.productPrice {
+        font-family: "Nunito";
+        font-size: 13pt;
+    }
+
+    span.productPrice2 {
+        font-family: "Nunito";
+        font-size: 10pt;
+        position: relative;
+        top: -.2em;
+    }
+
+    /********** Reflection **********/  
+    div.reflect {
+        width: 370px;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        overflow: auto;   
+    }
+
+    div.questions h4 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 16pt;
+        font-family: "Nunito";
+        color: #35383b;
+    }
+
+    div.answers p {
+        margin-top: 0;
+        margin-bottom: 100px;
+        font-size: 14pt;
+        font-family: "Nunito";
+        color: #676a6d;
+        line-height: 50px;
+    }
+
+    /********** myinfo **********/
+    .myContainer{
+        width: 90%;
+        margin: auto;
+    }
+    form{
+        width: 100%;
+        overflow: auto;
+    }
+    div#wrapper {
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+
+    /** Input Box **/
+    div.inputBox {
+        position: relative;
+        width: 100%;
+        display: table;
+        color: #7b7e81;
+        margin-bottom: 1.5em;
+    }
+
+    input.inputBoxes {
+        font-family: "Nunito";
+        color: #212224;
+        font-size: 11pt;
+    }
+
+    input[type=text], input[type=password], input[type=email] {
+        width: 100%;
+        height: 50px;
+        padding: 12px 20px;
+        margin-bottom: 1.5em;
+        display: inline-block;
+        border: 1px solid #d5d8db;
+        border-radius: 5px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    div.sideContainer {
+        width: 100%;
+        float: left;
+        overflow: auto;
+        display: none;
+    }
+    
+    div.leftSidebar {
+        width: 100%;
+        height: 400px;
+        padding: 10px;
+        margin: auto;
+        float: left;
+        border: 1px solid #d5d8db;
+        text-align: center;
+        background-color: white;
+    }
+    
+    div.leftSidebar h5 {
+        margin: 0;
+        margin-top: 10px;
+        font-family: "Nunito";
+        font-size: 12pt;
+        color: #35383b;
+    }
+    
+    ul#errorList {
+        font-family: "Nunito";
+        font-size: 11pt;
+        color: #d15858;
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 1.5em;
+    }
+    
+    li {
+        margin-bottom: 20px;
+    }
+
+
+    hr.line { 
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: .5px;
+        border-color: #dfe2e5
+    }
+
+    /** Selction **/
+    p.selectTitle {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-family: "Nunito";
+        font-size: 16pt;
+        position: relative;
+    }
+
+    div.selection {
+        margin-bottom: 1.5em;
+        font-size: 12pt;
+        font-family: "Nunito";
+        overflow: auto;
+    }
+
+    /** Dropdown Menu **/
+    select#dropDownMenu {
+        width: 100%;
+        height: 50px;
+        /*margin: 1.5em;*/
+        background-color: white;
+        border: 1px solid #d5d8db;
+        border-radius: 5px;
+        display: inline-block;
+        font-family: "Nunito";
+        color: #a3a6a9;
+        font-size: 18px;
+
+        line-height: 1.5em;
+        padding: 0.5em 3.5em 0.5em 1em;
+        margin-top: 20px;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        
+        background-image: linear-gradient(45deg, transparent 50%, gray 30%), linear-gradient(135deg, gray 50%, transparent 50%);
+        background-position: calc(100% - 20px) calc(1.4em + 2px), calc(100% - 15px) calc(1.4em + 2px), calc(100% - .5em) .5em;
+        background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
+        background-repeat: no-repeat;
+    }
+
+
+    /** Radio Button **/
+    div#radioFont {
+        color: #85888b;
+        font-size: 11pt;
+        margin-top: 20px;
+        float: right;
+        width: 100%;
+    }
+
+    div.formclass input {
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        margin-bottom: 1.5em;
+        margin-top: 20px;
+        box-sizing: border-box;
+        float: right;
+        border: 1px solid #d5d8db;
+        overflow: auto;
+    }
+
+    /** Submit Buttton **/
+    div.btnWrapper {
+        width: 20%;
+        padding: 0;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    div.btnWrapper button {
+        width: 80px;
+        height: 40px;
+        border-radius: 5px;
+        font-family: "Nunito";
+        color: white;
+        font-size: 10pt;
+        background-color: #6fdeb1;
+        border: 1px solid #64c49e;
+        margin: auto;
+    }
+
+    /** Footer **/
+    div.footer {
+        background: white;
+        border-top: #d5d8db solid 1px;
+        width: 100%;
+        min-width: 0;
+        bottom: 0;
+        margin: 0;
+        float: left;
+        text-align: center;
+        position: relative;
+    }
+
+    p.footerCopy {
+        font: 11pt "Nunito";
+        color: #a3a6a9;
+        padding: 40px;
+    }
+
+    div.link {
+        width: 100%;
+        font: 11pt "Nunito";
+        color: #a3a6a9;
+        padding-bottom: 40px;
+        margin: 0;
+    }
+
+    a.gitlink {
+        text-decoration: none;
+    }
+
+    img.git {
+        width: 10px;
+        height: 20px;
+        min-width: 20px;
+        opacity: .5;
+        vertical-align: middle;
+    }/** Footer **/
+    div.footer {
+        background: white;
+        border-top: #d5d8db solid 1px;
+        width: 100%;
+        min-width: 0;
+        bottom: 0;
+        margin: 0;
+        float: left;
+        text-align: center;
+        position: relative;
+    }
+
+    p.footerCopy {
+        font: 16pt "Nunito";
+        color: #a3a6a9;
+        padding: 40px;
+    }
+
+    div.link {
+        width: 100%;
+        font: 16pt "Nunito";
+        color: #a3a6a9;
+        padding-bottom: 40px;
+        margin: 0;
+    }
+
+    a.gitlink {
+        text-decoration: none;
+    }
+
+    img.git {
+        width: 10px;
+        height: 40px;
+        min-width: 40px;
+        opacity: .5;
+        vertical-align: middle;
+    }
+    
+}
