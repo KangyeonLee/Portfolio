@@ -93,7 +93,7 @@
         font-weight: bold;
     }
 
-    /** copy **/
+    /************** Top Copyright **************/
     div.topCopy {
         width: 1000px;
         padding-top: 210px;
@@ -102,7 +102,7 @@
         margin: auto;
     }
 
-    div.topCopy h3 {
+    div.topCopy h2 {
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
@@ -125,6 +125,21 @@
         color: #676a6d;
     }
 
+    /************** Contents **************/
+    div.links {
+        margin: auto;
+        width: 1000px;
+        position: relative;
+        padding-bottom: 120px;
+    }
+
+    div.links p {
+        margin: 0;
+        float: left;
+    }
+
+    /************** Contents **************/
+
     /** Body container **/
     div.bodyContainer {
         width: 1000px;
@@ -142,7 +157,7 @@
     }
 
     /** Thumbnail **/
-    div.thumbnail {
+    div.projectWrapper {
         width: 320px;
         height: 320px;
         margin: 0;
@@ -152,14 +167,95 @@
         position: relative;
     }
 
-    img {
+    div.projectCover {
         width: 320px;
         height: 320px;
-        min-width: 200px;
+        position: absolute;
+        cursor: pointer;
+        }
+        
+
+    div.projectCover img{
+        width: 320px;
+        height: 320px;
+        position: absolute;
+        margin-left: -75px;
+        margin-top: -100px;
+        margin: 0;
+    }
+   
+    img.cover_projectImg {
+        position: absolute;
+        width: 320px;
+        height: 320px;
+        opacity: 0;
+        transition: all .3s ease; 
+        
+    }
+
+    div.projectCover:hover .cover_projectImg {
+        opacity: 1;
+       
+    }
+
+    /** Description **/
+    div.projectDetail {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 320px;
+        width: 320px;
+        opacity: 0;
+        transition: all .3s ease;
+    }
+
+    div.projectDetail:hover {
+        opacity: 1;
+    }
+
+    div.description a {
+        text-decoration: none;
+    }
+
+    p.title {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font: 12pt "Montserrat";
+        text-transform: uppercase;
+        font-weight: bolder;
+       padding-bottom: 50px;
+        margin: 0;
+        width: 300px;
+        text-align: center;
+    }
+
+    p.projectDesc {
+        color: white;
+        font-size: 20px;
+        position: relative;
+        top: 200px;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font: 10pt "Montserrat";
+        font-weight: 100;
+        margin: 0;
+        width: 200px;
     }
 
     div.padding {
-        padding-bottom: 150px;
+        padding-bottom: 100px;
     }
 
     /** Footer **/
@@ -180,15 +276,7 @@
         color: #a3a6a9;
         padding: 50px;
     }
-/*
-    div.link {
-        width: 100%;
-        font: 11pt "Montserrat";
-        color: #a3a6a9;
-        padding-bottom: 40px;
-        margin: 0;
-    }
-*/
+
     a.gitlink {
         text-decoration: none;
     }
